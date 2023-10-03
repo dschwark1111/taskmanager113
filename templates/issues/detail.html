@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ issue.description }}{% endblock title %}
+
+{% block content %}
+<h1>{{ issue.status }}</h1>
+<h3> {{ issue.assignee }} </h3>
+<p> {{ issue.summary }}</p>
+<strong>Created on: {{ issue.created_on}} </strong>
+{% endblock content %}
